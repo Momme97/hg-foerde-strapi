@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_contentblock_contentblocks",
+  "info": {
+    "displayName": "contentblock"
+  },
+  "options": {},
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}

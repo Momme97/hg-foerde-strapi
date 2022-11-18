@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_handball4all_liga_handball4_all_ligas",
+  "info": {
+    "displayName": "Handball4AllLiga",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Liganame": {
+      "type": "string"
+    },
+    "LigaId": {
+      "type": "biginteger"
+    }
+  }
+}

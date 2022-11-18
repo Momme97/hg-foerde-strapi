@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_staffel_team_staffel_teams",
+  "info": {
+    "displayName": "StaffelTeam"
+  },
+  "options": {},
+  "attributes": {
+    "Teamname": {
+      "type": "string"
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

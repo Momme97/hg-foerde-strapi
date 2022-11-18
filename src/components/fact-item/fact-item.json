@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_fact_item_fact_items",
+  "info": {
+    "displayName": "FactItem"
+  },
+  "options": {},
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "Icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

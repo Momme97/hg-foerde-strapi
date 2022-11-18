@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "jugends",
+  "info": {
+    "singularName": "jugend",
+    "pluralName": "jugends",
+    "displayName": "Jugend",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ansprechpartner": {
+      "type": "dynamiczone",
+      "components": [
+        "person.person"
+      ]
+    },
+    "Contentblocks": {
+      "type": "dynamiczone",
+      "components": [
+        "contentblock.contentblock"
+      ]
+    }
+  }
+}

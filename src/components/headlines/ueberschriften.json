@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_headlines_ueberschriftens",
+  "info": {
+    "displayName": "Überschriften"
+  },
+  "options": {},
+  "attributes": {
+    "H1": {
+      "type": "text"
+    },
+    "H2": {
+      "type": "text"
+    }
+  }
+}

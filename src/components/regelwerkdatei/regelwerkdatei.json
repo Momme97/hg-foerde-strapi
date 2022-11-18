@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_regelwerkdatei_regelwerkdateis",
+  "info": {
+    "displayName": "Regelwerkdatei"
+  },
+  "options": {},
+  "attributes": {
+    "Dateiname": {
+      "type": "string"
+    },
+    "Datei": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

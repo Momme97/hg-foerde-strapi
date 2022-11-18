@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vereines",
+  "info": {
+    "singularName": "vereine",
+    "pluralName": "vereines",
+    "displayName": "Vereine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Vereinsname": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Mannschaften": {
+      "type": "dynamiczone",
+      "components": [
+        "mannschaft.mannschaft"
+      ]
+    },
+    "Ansprechpartner": {
+      "type": "dynamiczone",
+      "components": [
+        "person.person"
+      ]
+    },
+    "Webseitenanzeigename": {
+      "type": "string"
+    },
+    "WebseitenUrl": {
+      "type": "string"
+    }
+  }
+}

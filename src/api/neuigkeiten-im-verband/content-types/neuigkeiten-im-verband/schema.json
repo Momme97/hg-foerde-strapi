@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "neuigkeiten_im_verbands",
+  "info": {
+    "singularName": "neuigkeiten-im-verband",
+    "pluralName": "neuigkeiten-im-verbands",
+    "displayName": "Neuigkeiten im Verband",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "Artikelbild": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Contentarea": {
+      "type": "dynamiczone",
+      "components": [
+        "artikelbild.artikelbild",
+        "richtextblock.rich-text-block"
+      ]
+    },
+    "Author": {
+      "type": "string"
+    },
+    "Kurzbeschreibung": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_single_file_item_singe_file_items",
+  "info": {
+    "displayName": "SingeFileItem"
+  },
+  "options": {},
+  "attributes": {
+    "Filename": {
+      "type": "string"
+    },
+    "File": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

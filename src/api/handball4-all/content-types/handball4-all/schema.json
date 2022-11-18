@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "handball4_alls",
+  "info": {
+    "singularName": "handball4-all",
+    "pluralName": "handball4-alls",
+    "displayName": "Handball4All",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ligen": {
+      "type": "dynamiczone",
+      "components": [
+        "handball4all-liga.handball4-all-liga"
+      ]
+    }
+  }
+}

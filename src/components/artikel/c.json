@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_artikel_c",
+  "info": {
+    "displayName": "ç",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Textblock": {
+      "type": "text"
+    }
+  }
+}

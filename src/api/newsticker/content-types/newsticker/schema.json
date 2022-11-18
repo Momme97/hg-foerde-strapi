@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "newstickers",
+  "info": {
+    "singularName": "newsticker",
+    "pluralName": "newstickers",
+    "displayName": "Newsticker"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "Spielabsage": {
+      "type": "boolean"
+    },
+    "Spielverlegung": {
+      "type": "boolean"
+    },
+    "Sonstiges": {
+      "type": "boolean"
+    }
+  }
+}

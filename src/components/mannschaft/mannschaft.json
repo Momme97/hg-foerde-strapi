@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_mannschaft_mannschafts",
+  "info": {
+    "displayName": "Mannschaft"
+  },
+  "options": {},
+  "attributes": {
+    "Mannschaftsname": {
+      "type": "string"
+    },
+    "Teambild": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Trikots": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Trainer": {
+      "type": "string"
+    }
+  }
+}

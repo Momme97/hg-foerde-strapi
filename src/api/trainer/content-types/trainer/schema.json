@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "trainers",
+  "info": {
+    "singularName": "trainer",
+    "pluralName": "trainers",
+    "displayName": "Trainer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "Seitenbeschreibung": {
+      "type": "text"
+    },
+    "Ansprechpartner": {
+      "type": "dynamiczone",
+      "components": [
+        "person.person"
+      ]
+    }
+  }
+}

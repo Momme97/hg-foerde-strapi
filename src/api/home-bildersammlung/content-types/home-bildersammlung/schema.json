@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_bildersammlungs",
+  "info": {
+    "singularName": "home-bildersammlung",
+    "pluralName": "home-bildersammlungs",
+    "displayName": "Home - Bildersammlung"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Gallery": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

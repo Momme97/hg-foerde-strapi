@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anstehende_spieles",
+  "info": {
+    "singularName": "anstehende-spiele",
+    "pluralName": "anstehende-spieles",
+    "displayName": "Anstehende Spiele",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Heimmannschaft": {
+      "type": "string",
+      "required": true
+    },
+    "Auswaertsmannschaft": {
+      "type": "string",
+      "required": true
+    },
+    "Spieltermin": {
+      "type": "datetime",
+      "required": true
+    },
+    "Ort": {
+      "type": "string",
+      "required": true
+    },
+    "LogoHeim": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "LogoAuswaerts": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Abgesagt": {
+      "type": "boolean"
+    }
+  }
+}

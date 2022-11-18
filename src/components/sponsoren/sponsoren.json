@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_sponsoren_sponsorens",
+  "info": {
+    "displayName": "Sponsoren",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Verlinkung": {
+      "type": "string"
+    },
+    "sponsorBackground": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

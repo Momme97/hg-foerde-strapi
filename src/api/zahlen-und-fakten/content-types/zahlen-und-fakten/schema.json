@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "zahlen_und_faktens",
+  "info": {
+    "singularName": "zahlen-und-fakten",
+    "pluralName": "zahlen-und-faktens",
+    "displayName": "Zahlen und Fakten"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Items": {
+      "type": "dynamiczone",
+      "components": [
+        "fact-item.fact-item"
+      ]
+    }
+  }
+}

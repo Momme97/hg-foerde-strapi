@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_h2_h2s",
+  "info": {
+    "displayName": "h2"
+  },
+  "options": {},
+  "attributes": {
+    "h2": {
+      "type": "text"
+    }
+  }
+}

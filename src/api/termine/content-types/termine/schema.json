@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "termines",
+  "info": {
+    "singularName": "termine",
+    "pluralName": "termines",
+    "displayName": "Termine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Thema": {
+      "type": "string"
+    },
+    "Datum": {
+      "type": "datetime"
+    },
+    "Beschreibung": {
+      "type": "richtext"
+    },
+    "Aussschreibung": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

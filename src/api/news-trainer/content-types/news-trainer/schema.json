@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_trainers",
+  "info": {
+    "singularName": "news-trainer",
+    "pluralName": "news-trainers",
+    "displayName": "News-Trainer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "Artikelbild": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Contentarea": {
+      "type": "dynamiczone",
+      "components": [
+        "artikelbild.artikelbild",
+        "richtextblock.rich-text-block"
+      ]
+    },
+    "Author": {
+      "type": "string"
+    }
+  }
+}
