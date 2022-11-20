@@ -7,34 +7,49 @@ services:
       dockerfile: ./Dockerfile
     container_name: strapi_v4_app
     restart: unless-stopped
+    env_file: .env
     environment:
-      NODE_ENV: production
-      DATABASE_CLIENT: postgres
-      DATABASE_HOST: db
-      DATABASE_PORT: 5432
-      DATABASE_NAME: app
-      DATABASE_USERNAME: db_username
-      DATABASE_PASSWORD: db_password
-    volumes:
-      - ./app:/srv/app
+      - NODE_ENV=production
+      - DATABASE_CLIENT=postgres
+      - DATABASE_HOST=strapiDB
+      - DATABASE_PORT=5432
+      - DATABASE_NAME=strapi
+      - DATABASE_USERNAME=strapi
+      - DATABASE_PASSWORD=strapi
     ports:
-      - 127.0.0.1:8000:1337
-    depends_on:
-      - db
-    networks:
-      - strapi-network
-
-  db:
-    image: postgres:13
-    container_name: strapi_v4_db
-    restart: unless-stopped
-    environment:
-      POSTGRES_DB: app
-      POSTGRES_USER: db_username
-      POSTGRES_PASSWORD: db_password
+      - 1337:1337
     volumes:
-      - ./data:/var/lib/postgresql/data
+      - ./config:/opt/app/config
+      - ./src:/opt/app/src
+      - ./package.json:/opt/package.json
+      - ./yarn.lock:/opt/yarn.lock
+      - ./.env:/opt/app/.env
+      - ./public/uploads:/opt/app/public/uploads
+    ports:
+      - '1337:1337'
+    depends_on:
+      - strapiDB
     networks:
-      - strapi-network
+      - strapi
+
+  strapiDB:
+    container_name: postgres
+    image: postgres
+    restart: always
+    volumes:
+      - strapi-data:/var/lib/POSTGRESS
+    environment:
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapi
+      POSTGRES_DB: strapi
+    ports:
+      - '3306:3306'
+    networks:
+      - strapi
+
+volumes:
+  strapi-data:
 networks:
-  strapi-network:
+  strapi:
+    name: Strapi
+    driver: bridge
