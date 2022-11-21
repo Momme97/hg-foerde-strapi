@@ -8,6 +8,6 @@ docker stop $(docker ps -aq)
 docker rm $(docker ps -aq)
 
 #Remove all old images
-docker rmi $(docker images -q)
+docker rm $(docker ps -aq)
 
 docker-compose up -d
