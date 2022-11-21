@@ -20,12 +20,12 @@ services:
     ports:
       - 1337:1337
     volumes:
-      - /mnt/strapiConsitentData:/opt/app/config
-      - /mnt/strapiConsitentData:/opt/app/src
-      - /mnt/strapiConsitentData:/opt/package.json
-      - /mnt/strapiConsitentData:/opt/yarn.lock
-      - /mnt/strapiConsitentData:/opt/app/.env
-      - /mnt/strapiConsitentData:/opt/app/public/uploads
+      - ./mnt/strapiConsitentData:/opt/app/config
+      - ./mnt/strapiConsitentData:/opt/app/src
+      - ./mnt/strapiConsitentData:/opt/package.json
+      - ./mnt/strapiConsitentData:/opt/yarn.lock
+      - ./mnt/strapiConsitentData:/opt/app/.env
+      - ./mnt/strapiConsitentData:/opt/app/public/uploads
     ports:
       - '1337:1337'
     depends_on:
@@ -38,7 +38,7 @@ services:
     image: postgres
     restart: always
     volumes: 
-      - /mnt/strapiConsitentData:/opt/app/postgres
+      - ./mnt/strapiConsitentData:/opt/app/postgres
     environment:
       POSTGRES_USER: strapi
       POSTGRES_PASSWORD: strapi
