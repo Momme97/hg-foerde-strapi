@@ -21,22 +21,22 @@ services:
       - 1337:1337
     volumes:
       - type: bind
-        source: ../../strapiConsitentData/docker/config
+        source: /mnt/strapiConsitentData/docker/config
         target: /opt/app/config
       - type: bind
-        source: ../../strapiConsitentData/docker/src
+        source: /mnt/strapiConsitentData/docker/src
         target: /opt/app/src
       - type: bind
-        source: ../../strapiConsitentData/docker
+        source: /mnt/strapiConsitentData/docker/
         target: /opt/package.json
       - type: bind
-        source: ../../strapiConsitentData/docker/
+        source: /mnt/strapiConsitentData/docker/
         target: /opt/yarn.lock
       - type: bind
-        source: ../../strapiConsitentData/docker/
+        source: /mnt/strapiConsitentData/docker/
         target: /opt/app/.env
       - type: bind
-        source: ../../strapiConsitentData/docker/uploads
+        source: /mnt/strapiConsitentData/docker/uploads
         target: /opt/app/public/uploads
     ports:
       - '1337:1337'
@@ -51,7 +51,7 @@ services:
     restart: always
     volumes: 
       - type: bind
-        source: ../../strapiConsitentData/docker/postgres
+        source: /mnt/strapiConsitentData/docker/postgres
         target: /opt/app/postgres
     environment:
       POSTGRES_USER: strapi
