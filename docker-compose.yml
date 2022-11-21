@@ -20,9 +20,7 @@ services:
     ports:
       - 1337:1337
     volumes:
-      - type: bind
-        source: /mnt/strapiConsitentData/docker/app
-        target: /srv/app
+      - /mnt/strapiConsitentData/docker/app:/opt/app/postgres
     ports:
       - '1337:1337'
     depends_on:
@@ -35,9 +33,7 @@ services:
     image: postgres
     restart: always
     volumes: 
-      - type: bind
-        source: /mnt/strapiConsitentData/docker/postgres:/opt/app/postgres
-        target: /opt/app/postgres
+      - /mnt/strapiConsitentData/docker/postgres:/opt/app/postgres
     environment:
       POSTGRES_USER: strapi
       POSTGRES_PASSWORD: strapi
