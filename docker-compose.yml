@@ -20,12 +20,24 @@ services:
     ports:
       - 1337:1337
     volumes:
-      - ./mnt/strapiConsitentData:/opt/app/config
-      - ./mnt/strapiConsitentData:/opt/app/src
-      - ./mnt/strapiConsitentData:/opt/package.json
-      - ./mnt/strapiConsitentData:/opt/yarn.lock
-      - ./mnt/strapiConsitentData:/opt/app/.env
-      - ./mnt/strapiConsitentData:/opt/app/public/uploads
+      - type: bind
+        source: ./mnt/strapiConsitentData/docker/config
+        target: /opt/app/config
+      - type: bind
+        source: ./mnt/strapiConsitentData/docker/src
+        target: /opt/app/src
+      - type: bind
+        source: ./mnt/strapiConsitentData/docker/package.json
+        target: /opt/package.json
+      - type: bind
+        source: ./mnt/strapiConsitentData/docker/yarn.lock
+        target: /opt/yarn.lock
+      - type: bind
+        source: ./mnt/strapiConsitentData/docker/.env
+        target: /opt/app/.env
+      - type: bind
+        source: ./mnt/strapiConsitentData/docker/uploads
+        target: /opt/app/public/uploads
     ports:
       - '1337:1337'
     depends_on:
@@ -38,7 +50,9 @@ services:
     image: postgres
     restart: always
     volumes: 
-      - ./mnt/strapiConsitentData:/opt/app/postgres
+      - type: bind
+        source: ./mnt/strapiConsitentData/docker/postgres
+        target: /opt/app/postgres
     environment:
       POSTGRES_USER: strapi
       POSTGRES_PASSWORD: strapi
@@ -47,7 +61,8 @@ services:
       - '3306:3306'
     networks:
       - strapi
-
+volumes:
+  myapp:
 networks:
   strapi:
     name: Strapi
