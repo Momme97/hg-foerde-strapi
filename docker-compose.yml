@@ -20,12 +20,12 @@ services:
     ports:
       - 1337:1337
     volumes:
-      - /mnt/HC_Volume_24825772:/opt/app/config
-      - /mnt/HC_Volume_24825772:/opt/app/src
-      - /mnt/HC_Volume_24825772:/opt/package.json
-      - /mnt/HC_Volume_24825772:/opt/yarn.lock
-      - /mnt/HC_Volume_24825772:/opt/app/.env
-      - /mnt/HC_Volume_24825772:/opt/app/public/uploads
+      - mounted-hetzner-volume:/opt/app/config
+      - mounted-hetzner-volume:/opt/app/src
+      - mounted-hetzner-volume:/opt/package.json
+      - mounted-hetzner-volume:/opt/yarn.lock
+      - mounted-hetzner-volume:/opt/app/.env
+      - mounted-hetzner-volume:/opt/app/public/uploads
     ports:
       - '1337:1337'
     depends_on:
@@ -38,7 +38,7 @@ services:
     image: postgres
     restart: always
     volumes:
-      - /mnt/HC_Volume_24825772:/var/lib/POSTGRESS
+      - mounted-hetzner-volume:/var/lib/POSTGRESS
     environment:
       POSTGRES_USER: strapi
       POSTGRES_PASSWORD: strapi
@@ -52,3 +52,11 @@ networks:
   strapi:
     name: Strapi
     driver: bridge
+
+volumes:
+  mounted-hetzner-volume:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /mnt/strapiConsitentData
