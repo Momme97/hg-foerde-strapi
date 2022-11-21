@@ -61,8 +61,7 @@ services:
       - '3306:3306'
     networks:
       - strapi
-volumes:
-  myapp:
+
 networks:
   strapi:
     name: Strapi
