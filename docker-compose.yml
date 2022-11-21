@@ -51,7 +51,7 @@ services:
     restart: always
     volumes: 
       - type: bind
-        source: ../../strapiConsitentData/postgres
+        source: ../../strapiConsitentData/docker/postgres
         target: /opt/app/postgres
     environment:
       POSTGRES_USER: strapi
