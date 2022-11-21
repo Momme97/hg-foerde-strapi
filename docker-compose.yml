@@ -49,7 +49,7 @@ services:
       - strapi
 
 volumes:
-  strapi-data:
+  strapi-data: './mnt/HC_Volume_24825772'
 networks:
   strapi:
     name: Strapi
