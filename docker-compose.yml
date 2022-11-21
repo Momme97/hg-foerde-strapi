@@ -37,8 +37,8 @@ services:
     container_name: postgres
     image: postgres
     restart: always
-    volumes:
-      - mounted-hetzner-volume:/var/lib/POSTGRESS
+    volumes: 
+      - mounted-hetzner-volume:/opt/app/postgres
     environment:
       POSTGRES_USER: strapi
       POSTGRES_PASSWORD: strapi
