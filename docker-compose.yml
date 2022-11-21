@@ -21,23 +21,8 @@ services:
       - 1337:1337
     volumes:
       - type: bind
-        source: /mnt/strapiConsitentData/docker/config
-        target: /opt/app/config
-      - type: bind
-        source: /mnt/strapiConsitentData/docker/src
-        target: /opt/app/src
-      - type: bind
-        source: /mnt/strapiConsitentData/docker/
-        target: /opt/package.json
-      - type: bind
-        source: /mnt/strapiConsitentData/docker/
-        target: /opt/yarn.lock
-      - type: bind
-        source: /mnt/strapiConsitentData/docker/
-        target: /opt/app/.env
-      - type: bind
-        source: /mnt/strapiConsitentData/docker/uploads
-        target: /opt/app/public/uploads
+        source: /mnt/strapiConsitentData/docker/app
+        target: /srv/app
     ports:
       - '1337:1337'
     depends_on:
