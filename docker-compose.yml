@@ -20,12 +20,12 @@ services:
     ports:
       - 1337:1337
     volumes:
-      - ./config:/opt/app/config
-      - ./src:/opt/app/src
-      - ./package.json:/opt/package.json
-      - ./yarn.lock:/opt/yarn.lock
-      - ./.env:/opt/app/.env
-      - ./public/uploads:/opt/app/public/uploads
+      - /mnt/HC_Volume_24825772:/opt/app/config
+      - /mnt/HC_Volume_24825772:/opt/app/src
+      - /mnt/HC_Volume_24825772:/opt/package.json
+      - /mnt/HC_Volume_24825772:/opt/yarn.lock
+      - /mnt/HC_Volume_24825772:/opt/app/.env
+      - /mnt/HC_Volume_24825772:/opt/app/public/uploads
     ports:
       - '1337:1337'
     depends_on:
@@ -38,7 +38,7 @@ services:
     image: postgres
     restart: always
     volumes:
-      - strapi-data:/var/lib/POSTGRESS
+      - /mnt/HC_Volume_24825772:/var/lib/POSTGRESS
     environment:
       POSTGRES_USER: strapi
       POSTGRES_PASSWORD: strapi
@@ -48,8 +48,6 @@ services:
     networks:
       - strapi
 
-volumes:
-  strapi-data: './mnt/HC_Volume_24825772'
 networks:
   strapi:
     name: Strapi
