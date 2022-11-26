@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sporthalle_sporthalles",
+  "info": {
+    "displayName": "Sporthalle"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Bild": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Lat": {
+      "type": "float"
+    },
+    "Long": {
+      "type": "float"
+    }
+  }
+}

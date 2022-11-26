@@ -43,6 +43,12 @@
     },
     "WebseitenUrl": {
       "type": "string"
+    },
+    "Sporthallen": {
+      "type": "dynamiczone",
+      "components": [
+        "sporthalle.sporthalle"
+      ]
     }
   }
 }
