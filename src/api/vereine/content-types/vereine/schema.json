@@ -49,6 +49,18 @@
       "components": [
         "sporthalle.sporthalle"
       ]
+    },
+    "strasse": {
+      "type": "string"
+    },
+    "Postleitzahl": {
+      "type": "string"
+    },
+    "Stadt": {
+      "type": "string"
+    },
+    "Hausnummer": {
+      "type": "string"
     }
   }
 }
