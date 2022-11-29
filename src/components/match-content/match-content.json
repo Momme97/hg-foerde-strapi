@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_match_content_match_contents",
+  "info": {
+    "displayName": "MatchContent"
+  },
+  "options": {},
+  "attributes": {
+    "Heimmannschaft": {
+      "type": "string"
+    },
+    "Auswaertsmannschaft": {
+      "type": "string"
+    },
+    "Anwurfzeit": {
+      "type": "datetime"
+    },
+    "Spielklasse": {
+      "type": "string"
+    },
+    "HeimLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Auswaertslogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Spielort": {
+      "type": "string"
+    }
+  }
+}

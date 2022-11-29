@@ -30,7 +30,8 @@
       "type": "dynamiczone",
       "components": [
         "artikelbild.artikelbild",
-        "richtextblock.rich-text-block"
+        "richtextblock.rich-text-block",
+        "match-content.match-content"
       ]
     },
     "Author": {

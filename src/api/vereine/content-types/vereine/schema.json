@@ -61,6 +61,9 @@
     },
     "Hausnummer": {
       "type": "string"
+    },
+    "Trainingszeiten": {
+      "type": "richtext"
     }
   }
 }
