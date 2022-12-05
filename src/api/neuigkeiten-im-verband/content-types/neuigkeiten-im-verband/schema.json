@@ -29,7 +29,6 @@
     "Contentarea": {
       "type": "dynamiczone",
       "components": [
-        "artikelbild.artikelbild",
         "richtextblock.rich-text-block",
         "match-content.match-content"
       ]
