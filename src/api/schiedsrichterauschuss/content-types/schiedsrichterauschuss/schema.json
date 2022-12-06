@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "schiedsrichterauschusses",
+  "info": {
+    "singularName": "schiedsrichterauschuss",
+    "pluralName": "schiedsrichterauschusses",
+    "displayName": "Schiedsrichterauschuss"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Mitglieder": {
+      "type": "dynamiczone",
+      "components": [
+        "person.person"
+      ]
+    }
+  }
+}
