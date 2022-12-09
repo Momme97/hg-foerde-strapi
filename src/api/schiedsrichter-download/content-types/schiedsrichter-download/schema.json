@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "schiedsrichter_downloads",
+  "info": {
+    "singularName": "schiedsrichter-download",
+    "pluralName": "schiedsrichter-downloads",
+    "displayName": "Schiedsrichter-download"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Dateiliste": {
+      "type": "dynamiczone",
+      "components": [
+        "single-file-item.singe-file-item"
+      ]
+    }
+  }
+}
