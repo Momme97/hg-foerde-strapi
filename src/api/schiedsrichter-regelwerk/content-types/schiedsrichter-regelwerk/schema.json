@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "schiedsrichter_regelwerks",
+  "info": {
+    "singularName": "schiedsrichter-regelwerk",
+    "pluralName": "schiedsrichter-regelwerks",
+    "displayName": "Schiedsrichter-regelwerk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "Textbereich": {
+      "type": "richtext"
+    },
+    "Ansprechpartner": {
+      "type": "dynamiczone",
+      "components": [
+        "person.person"
+      ]
+    }
+  }
+}
