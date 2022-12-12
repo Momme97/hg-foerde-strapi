@@ -4,7 +4,8 @@
   "info": {
     "singularName": "schiedsrichter-zentrale-grundausbildung",
     "pluralName": "schiedsrichter-zentrale-grundausbildungs",
-    "displayName": "Schiedsrichter-zentrale-grundausbildung"
+    "displayName": "Schiedsrichter-zentrale-grundausbildung",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,12 @@
       "components": [
         "person.person"
       ]
+    },
+    "DasBekommstDu": {
+      "type": "richtext"
+    },
+    "DasSolltestDuMitbringen": {
+      "type": "richtext"
     }
   }
 }

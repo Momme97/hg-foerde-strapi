@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "schiedsrichter_fortbildungs",
+  "info": {
+    "singularName": "schiedsrichter-fortbildung",
+    "pluralName": "schiedsrichter-fortbildungs",
+    "displayName": "Schiedsrichter-fortbildung"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ansprechpartner": {
+      "type": "dynamiczone",
+      "components": [
+        "person.person"
+      ]
+    }
+  }
+}
