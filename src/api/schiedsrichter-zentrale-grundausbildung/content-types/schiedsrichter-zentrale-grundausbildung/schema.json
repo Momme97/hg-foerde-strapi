@@ -26,6 +26,9 @@
     },
     "DasSolltestDuMitbringen": {
       "type": "richtext"
+    },
+    "Textbereich": {
+      "type": "richtext"
     }
   }
 }
