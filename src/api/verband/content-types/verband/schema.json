@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "verbands",
+  "info": {
+    "singularName": "verband",
+    "pluralName": "verbands",
+    "displayName": "verband"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ansprechpartner": {
+      "type": "dynamiczone",
+      "components": [
+        "person.person"
+      ]
+    }
+  }
+}
