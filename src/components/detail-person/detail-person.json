@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_detail_person_detail_people",
+  "info": {
+    "displayName": "DetailPerson",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Vorname": {
+      "type": "string"
+    },
+    "Nachname": {
+      "type": "string"
+    },
+    "Profilbild": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "email": {
+      "type": "email"
+    },
+    "Handynummer": {
+      "type": "string"
+    },
+    "Kurzbeschreibung": {
+      "type": "text"
+    }
+  }
+}

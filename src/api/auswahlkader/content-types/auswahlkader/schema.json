@@ -21,6 +21,7 @@
     "Ansprechpartner": {
       "type": "dynamiczone",
       "components": [
+        "detail-person.detail-person",
         "person.person"
       ]
     },
