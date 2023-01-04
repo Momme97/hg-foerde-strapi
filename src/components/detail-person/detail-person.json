@@ -31,6 +31,9 @@
     },
     "Kurzbeschreibung": {
       "type": "text"
+    },
+    "Position": {
+      "type": "string"
     }
   }
 }
